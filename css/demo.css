@@ -1,0 +1,34 @@
+/* demo style */
+
+.cd-nugget-info {
+  display: block;
+  font-family: "Droid Serif", serif;
+  color: #fff;
+  margin: 20px auto 0;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 120px;
+  position: relative;
+}
+.cd-nugget-info::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.cd-nugget-info:hover::after {
+  width: 100%;
+}
