@@ -1,4 +1,5 @@
 (function(){
+    // Slide In Panel - by CodyHouse.co
 	var panelTriggers = document.getElementsByClassName('js-cd-panel-trigger');
 	if( panelTriggers.length > 0 ) {
 		for(var i = 0; i < panelTriggers.length; i++) {
